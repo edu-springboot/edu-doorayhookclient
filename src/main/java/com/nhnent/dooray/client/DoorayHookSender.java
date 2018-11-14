@@ -6,6 +6,10 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * DoorayHook을 이용해서 HookUrl 에 요청을 전송하는 객체이다.
+ * DoorayHookを利用してHookUrlに要請を伝送するオブジェクトである。
+ */
 public class DoorayHookSender {
 
     private RestTemplate resttemplate;

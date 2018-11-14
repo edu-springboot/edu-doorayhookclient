@@ -4,7 +4,20 @@ package com.nhnent.dooray.client;
 import java.util.List;
 
 /**
- * {"botName": "BotName", "botIconImage": "https://translate.nhnent.com/icon/botimage.jpg", "text":"markdown text!\n* item1\n* item2","attachments":[{"title":"title!", "titleLink": "http://dooray.com", "text":"markdown text!!\n* item3\n* item4", "color": "darkgreen"}]}
+ * Dooray messenger hook 을 보내기위한 데이터 모델은 아래와 같다.
+ * Dooray messenger hook を送るためのデータモデルは以下の通りである。
+ *
+ *  {
+ *      "botName": "BotName",
+ *      "botIconImage": "https://translate.nhnent.com/icon/botimage.jpg",
+ *      "text":"markdown text!\n* item1\n* item2",
+ *      "attachments":[{
+ *           "title":"title!",
+ *           "titleLink": "http://dooray.com",
+ *           "text":"markdown text!!\n* item3\n* item4",
+ *           "color": "darkgreen"
+ *       }]
+ *  }
  */
 public class DoorayHook {
     private String botName;

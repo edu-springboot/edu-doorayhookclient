@@ -11,13 +11,15 @@ import static org.junit.Assert.*;
  */
 public class DoorayHookSenderTest {
 
+    public static final String HOOK_URL = "https://hook.dooray.com/services/1387695619080878080/1996189887212547744/k5xwWNlDSyeSPepE5VwdnQ";
+
     @Test
-    public void sendTest() throws Exception {
+    public void sendTest() {
         DoorayHook doorayHook = new DoorayHook();
         doorayHook.setBotName("test");
         doorayHook.setText("test!!");
 
-        DoorayHookSender doorayHookSender = new DoorayHookSender(new RestTemplate(), "https://hook.dooray.com/services/1387695619080878080/1996189887212547744/k5xwWNlDSyeSPepE5VwdnQ");
+        DoorayHookSender doorayHookSender = new DoorayHookSender(new RestTemplate(), HOOK_URL);
         doorayHookSender.send(doorayHook);
     }
 }
