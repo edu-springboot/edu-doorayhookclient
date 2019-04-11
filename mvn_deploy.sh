@@ -1,0 +1,1 @@
+mvn -DaltDeploymentRepository=snapshot::default::file:../edu-springboot-maven-repo/snapshots clean deploy
